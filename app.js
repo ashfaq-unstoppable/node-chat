@@ -28,6 +28,7 @@ io.on('connection', function(socket) {
    })
 });
 
-http.listen(3010, function() {
-   console.log('listening on localhost:3010');
+// .listen(process.env.PORT || 5000)
+http.listen(process.env.PORT || 5000, function() {
+   console.log(process.env.PORT || 0 ,'listening on localhost:3010');
 });
